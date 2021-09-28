@@ -41,7 +41,7 @@ def register():
             print("mail not sent")
         return redirect(url_for('auth.login'))
     title = 'New Account Registration'
-    return render_template('auth/registration.html',title = title,registration_form = form)
+    return render_template('auth/userSignup.html',title = title,registration_form = form)
 
 @auth.route('/logout')
 @login_required
